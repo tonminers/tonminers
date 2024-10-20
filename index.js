@@ -1,3 +1,7 @@
 $( document ).ready(function() {
-    $("#first_name").html(WebAppUser.first_name);
+    const params = new URLSearchParams(Telegram.WebApp.initData);
+    const userData = Object.fromEntries(params);
+    userData.user = JSON.parse(userData.user);
+
+    $("#first_name").html(userData.user.first_name);
 });

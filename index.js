@@ -5,7 +5,7 @@ $( document ).ready(function() {
 
     $("#first_name").html(userData.user.first_name);
 
-    const tg = Telegram.MainButton;
+    const tg = Telegram.WebApp.MainButton;
     tg.setText("Test Button");
     tg.show();
 });

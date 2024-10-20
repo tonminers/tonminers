@@ -4,4 +4,7 @@ $( document ).ready(function() {
     userData.user = JSON.parse(userData.user);
 
     $("#first_name").html(userData.user.first_name);
+
+    const tg = Telegram.WebApp;
+    tg.BottomButton.show();
 });

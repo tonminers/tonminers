@@ -6,6 +6,6 @@ $( document ).ready(function() {
     $("#first_name").html(userData.user.first_name);
 
     const tg = Telegram.WebApp;
-    tg.BottomButton.setText("Test Button");
+    // tg.BottomButton.text = "Test Button");
     tg.BottomButton.show();
 });

@@ -6,6 +6,6 @@ $( document ).ready(function() {
     $("#first_name").html(userData.user.first_name);
 
     const tg = Telegram.WebApp.MainButton;
-    tg.setText("Test Button");
+    tg.setText("New TON Mining Power Units (TMPU)");
     tg.show();
 });

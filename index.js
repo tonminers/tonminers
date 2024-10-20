@@ -1,3 +1,3 @@
 $( document ).ready(function() {
-    $("#first_name").html(window.WebAppUser.first_name);
+    $("#first_name").html(WebAppUser.first_name);
 });

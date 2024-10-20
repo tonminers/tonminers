@@ -5,3 +5,7 @@ body {
 .miner {
     width: 100%;
 }
+
+.test {
+    color: var(--tg-theme-text-color);
+}

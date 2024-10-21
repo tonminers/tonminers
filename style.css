@@ -6,6 +6,10 @@ body {
     background-color: var(--tg-theme-secondary-bg-color);
 }
 
+.miner {
+    background-color: var(--tg-theme-secondary-bg-color);
+}
+
 .miner > img {
     width: 100%;
 }

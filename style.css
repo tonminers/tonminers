@@ -1,11 +1,11 @@
-/* :root {
+:root {
     --tg-theme-bg-color: #17212B;
     --tg-theme-text-color: #FFF;
     --tg-theme-secondary-bg-color: #232E3C;
     --tg-theme-hint-color: #708498;
     --tg-theme-button-color: #5288C1;
     --tg-theme-button-text-color: #FFF;
-} */
+}
 
 body {
     background-color: var(--tg-theme-bg-color);
@@ -50,7 +50,7 @@ body {
     color: var(--tg-theme-button-text-color);
 }
 
-.btn-tg:hover,.btn-tg:active,.btn-tg:focus {
+.btn-tg:hover,.btn-tg:active,.btn-tg:focus,.btn-tg:focus-visible {
     background-color: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
 }

@@ -12,6 +12,7 @@ $( document ).ready(function() {
 
     tg.SecondaryButton.setText("⚪️ Withdraw");
     tg.SecondaryButton.show();
+    tg.SecondaryButton.color = tg.MainButton.color;
 
     // tg.BackButton.show();
 });

@@ -1,9 +1,9 @@
-/* :root {
+:root {
     --tg-theme-bg-color: #17212B;
     --tg-theme-text-color: #FFF;
     --tg-theme-secondary-bg-color: #232E3C;
     --tg-theme-hint-color: #708498;
-} */
+}
 
 body {
     background-color: var(--tg-theme-bg-color);
@@ -35,7 +35,7 @@ body {
 
 .welcome {
     color: var(--tg-theme-hint-color);
-    margin-top: 1.2em;
+    /* margin-top: 1.2em; */
     /* background-color: var(--tg-theme-header-bg-color); */
 }
 

@@ -1,10 +1,10 @@
-/* :root {
+:root {
     --tg-theme-bg-color: #17212B;
     --tg-theme-text-color: #FFF;
     --tg-theme-secondary-bg-color: #232E3C;
     --tg-theme-hint-color: #708498;
     --tg-theme-button-color: #5288C1;
-} */
+}
 
 body {
     background-color: var(--tg-theme-bg-color);
@@ -34,17 +34,24 @@ body {
     color: var(--tg-theme-text-color);
 }
 
+.text2 {
+    color: var(--tg-theme-hint-color);
+}
+
 .welcome {
     color: var(--tg-theme-hint-color);
-    /* margin-top: 1.2em; */
-    /* background-color: var(--tg-theme-header-bg-color); */
 }
 
 .icon {
     max-width: 30%;
-    /* margin-bottom: -3px; */
 }
 
 .name {
     color: var(--tg-theme-button-color);
+}
+
+.info {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
 }

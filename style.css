@@ -3,6 +3,10 @@ body {
 }
 
 .miner {
+    background-color: (--tg-theme-secondary-bg-color);
+}
+
+.miner > img {
     width: 100%;
 }
 

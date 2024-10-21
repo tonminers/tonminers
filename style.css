@@ -2,7 +2,7 @@ body {
     background-color: var(--tg-theme-bg-color);
 }
 
-.miner {
+.header {
     background-color: var(--tg-theme-secondary-bg-color);
 }
 

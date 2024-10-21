@@ -4,6 +4,7 @@ body {
 
 .header {
     background-color: var(--tg-theme-secondary-bg-color);
+    margin: 10px;
 }
 
 .miner {
@@ -25,4 +26,5 @@ body {
 
 .icon {
     max-width: 30%;
+    margin-bottom: -3px;
 }

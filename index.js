@@ -10,5 +10,5 @@ $( document ).ready(function() {
     tg.MainButton.setText("⚪️ Withdraw Earnings");
     tg.MainButton.show();
 
-    tg.BackButton.show();
+    // tg.BackButton.show();
 });

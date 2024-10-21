@@ -1,10 +1,10 @@
-/* :root {
+:root {
     --tg-theme-bg-color: #17212B;
     --tg-theme-text-color: #FFF;
     --tg-theme-secondary-bg-color: #232E3C;
     --tg-theme-hint-color: #708498;
     --tg-theme-button-color: #5288C1;
-} */
+}
 
 body {
     background-color: var(--tg-theme-bg-color);
@@ -15,7 +15,6 @@ body {
     width: 98%;
     margin-left: 1%;
     margin-right: 1%;
-    margin-top: 1%;
     border-radius: 8px;
 }
 

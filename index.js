@@ -5,7 +5,10 @@ $( document ).ready(function() {
 
     $("#first_name").html(userData.user.first_name);
 
-    const tg = Telegram.WebApp.MainButton;
-    tg.setText("⚪️ Withdraw Earnings");
-    tg.show();
+    const tg = Telegram.WebApp;
+
+    tg.MainButton.setText("⚪️ Withdraw Earnings");
+    tg.MainButton.show();
+
+    tg.BackButton.show();
 });

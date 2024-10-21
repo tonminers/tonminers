@@ -1,16 +1,28 @@
+:root {
+    --tg-theme-bg-color: #17212B;
+    --tg-theme-text-color: #FFF;
+    --tg-theme-secondary-bg-color: #232E3C;
+    --tg-theme-hint-color: #708498;
+}
+
 body {
     background-color: var(--tg-theme-bg-color);
 }
 
 .header {
     background-color: var(--tg-theme-secondary-bg-color);
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 8px;
 }
 
 .miner {
     background-color: var(--tg-theme-secondary-bg-color);
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 8px;
 }
 
 .miner > img {
@@ -23,10 +35,11 @@ body {
 
 .welcome {
     color: var(--tg-theme-hint-color);
+    margin-top: 1.2em;
     /* background-color: var(--tg-theme-header-bg-color); */
 }
 
 .icon {
     max-width: 30%;
-    margin-bottom: -3px;
+    /* margin-bottom: -3px; */
 }

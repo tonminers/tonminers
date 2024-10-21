@@ -7,8 +7,11 @@ $( document ).ready(function() {
 
     const tg = Telegram.WebApp;
 
-    tg.MainButton.setText("⚪️ Withdraw Earnings");
+    tg.MainButton.setText("⚪️ Compound");
     tg.MainButton.show();
+
+    tg.SecondaryButton.setText("⚪️ Withdraw");
+    tg.SecondaryButton.show();
 
     // tg.BackButton.show();
 });

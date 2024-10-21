@@ -9,3 +9,7 @@ body {
 .text {
     color: var(--tg-theme-text-color);
 }
+
+.welcome {
+    color: var(--tg-theme-hint-color);
+}

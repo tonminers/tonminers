@@ -43,3 +43,7 @@ body {
 .name {
     color: var(--tg-theme-button-color);
 }
+
+.btn-tg {
+    background-color: var(--tg-theme-button-color);
+}

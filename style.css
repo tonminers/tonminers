@@ -18,3 +18,7 @@ body {
     color: var(--tg-theme-hint-color);
     /* background-color: var(--tg-theme-header-bg-color); */
 }
+
+.icon {
+    max-width: 15%;
+}

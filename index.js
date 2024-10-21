@@ -5,15 +5,15 @@ $( document ).ready(function() {
 
     $("#first_name").html(userData.user.first_name);
 
-    const tg = Telegram.WebApp;
+    // const tg = Telegram.WebApp;
 
-    tg.MainButton.setText("⚪️ Compound");
-    tg.MainButton.show();
+    // tg.MainButton.setText("⚪️ Compound");
+    // tg.MainButton.show();
 
-    tg.SecondaryButton.setText("⚪️ Withdraw");
-    tg.SecondaryButton.show();
-    tg.SecondaryButton.color = tg.MainButton.color;
-    tg.SecondaryButton.textColor = tg.MainButton.textColor;
+    // tg.SecondaryButton.setText("⚪️ Withdraw");
+    // tg.SecondaryButton.show();
+    // tg.SecondaryButton.color = tg.MainButton.color;
+    // tg.SecondaryButton.textColor = tg.MainButton.textColor;
 
     // tg.BackButton.show();
 });

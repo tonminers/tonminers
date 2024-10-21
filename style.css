@@ -50,7 +50,27 @@ body {
     color: var(--tg-theme-button-text-color);
 }
 
-.btn-tg:hover,.btn-tg:active,.btn-tg:focus,.btn-tg:focus-visible {
+.btn-tg:hover {
+    background-color: #4778AB !important;
+    color: var(--tg-theme-button-text-color);
+}
+
+.btn-tg:active {
+    background-color: #4778AB !important;
+    color: var(--tg-theme-button-text-color) !important;
+}
+
+btn-tg:focus {
+    background-color: #4778AB !important;
+    color: var(--tg-theme-button-text-color) !important;
+}
+
+.btn-tg:focus-visible {
+    background-color: #4778AB !important;
+    color: var(--tg-theme-button-text-color);
+}
+
+.btn-tg:visited {
     background-color: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
 }

@@ -33,7 +33,7 @@ class App {
 
     openScreen(screen) {
         $("#screen_" + this.activeScreen).fadeOut(function() {
-            $("#screen_" + this.activeScreen).fadeIn();
+            $("#screen_" + screen).fadeIn();
             app.activeScreen = screen;
         });
         if (screen == "home") {

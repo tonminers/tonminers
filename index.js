@@ -37,9 +37,9 @@ class App {
             app.activeScreen = screen;
         });
         if (screen == "home") {
-            this.tg.BackButton.show();
-        } else {
             this.tg.BackButton.hide();
+        } else {
+            this.tg.BackButton.show();
             this.tg.BackButton.onClick(function() {
                 app.openScreen("home");
             });

@@ -29,6 +29,7 @@ class App {
     constructor() {
         this.activeScreen = "home";
         this.tg = Telegram.WebApp;
+        this.tg.SettingsButton.show();
     }
 
     openScreen(screen) {

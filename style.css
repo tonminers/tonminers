@@ -22,7 +22,8 @@ body {
 }
 
 .miner > img {
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
 }
 
 .text {

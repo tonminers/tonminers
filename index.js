@@ -21,6 +21,8 @@ $( document ).ready(function() {
     window["app"] = app;
 });
 
+const BACKEND = "https://176b-31-217-48-66.ngrok-free.app/"
+
 class App {
 
     activeScreen;

@@ -1,9 +1,9 @@
 $( document ).ready(function() {
-    const params = new URLSearchParams(Telegram.WebApp.initData);
-    const userData = Object.fromEntries(params);
-    userData.user = JSON.parse(userData.user);
+    // const params = new URLSearchParams(Telegram.WebApp.initData);
+    // const userData = Object.fromEntries(params);
+    // userData.user = JSON.parse(userData.user);
 
-    $("#first_name").html(userData.user.first_name);
+    // $("#first_name").html(userData.user.first_name);
 
     // const tg = Telegram.WebApp;
 
@@ -16,4 +16,31 @@ $( document ).ready(function() {
     // tg.SecondaryButton.textColor = tg.MainButton.textColor;
 
     // tg.BackButton.show();
+
+    const app = new App();
+    window["app"] = app;
 });
+
+class App {
+
+    activeScreen;
+    tg;
+
+    constructor() {
+        this.activeScreen = "home";
+        this.tg = Telegram.WebApp;
+    }
+
+    openScreen(screen) {
+        $("#screen_" + this.activeScreen).fadeOut(function() {
+            $("#screen_" + this.activeScreen).fadeIn();
+            app.activeScreen = screen;
+        });
+        this.tg.BackButton.show();
+    }
+
+    test() {
+        alert("dfdsafdsads");
+    }
+
+}

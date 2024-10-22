@@ -36,7 +36,14 @@ class App {
             $("#screen_" + this.activeScreen).fadeIn();
             app.activeScreen = screen;
         });
-        this.tg.BackButton.show();
+        if (screen == "home") {
+            this.tg.BackButton.show();
+        } else {
+            this.tg.BackButton.hide();
+            this.tg.BackButton.onClick(function() {
+                app.openScreen("home");
+            });
+        }
     }
 
     test() {

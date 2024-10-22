@@ -74,3 +74,7 @@ btn-tg:focus {
     background-color: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
 }
+
+.hidden {
+    display: none;
+}

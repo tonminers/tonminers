@@ -47,7 +47,7 @@
   
           <div class="row mt-3">
             <div class="col d-grid pe-0"><button type="button" class="btn btn-tg">⚪️ <small>Compound</small></button></div>
-            <div class="col d-grid"><button type="button" class="btn btn-tg">⚪️ <small>Withdraw</small></button></div>
+            <div class="col d-grid"><button type="button" class="btn btn-tg" onclick="app.openScreen('settings');">⚪️ <small>Withdraw</small></button></div>
           </div>
   
           <div class="mt-4">
@@ -63,7 +63,7 @@
   
           <div class="mt-4 row mb-2">
             <div class="col d-grid pe-0"><button type="button" class="btn btn-success" onclick="app.openScreen('new');"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;&nbsp;<small>New TMU</small></button></div>
-            <div class="col d-grid"><button type="button" class="btn btn-danger" onclick="app.test();"><i class="fa fa-minus-circle" aria-hidden="true"></i>&nbsp;&nbsp;<small>Cancel TMU</small></button></div>
+            <div class="col d-grid"><button type="button" class="btn btn-danger" onclick="app.openScreen('cancel');"><i class="fa fa-minus-circle" aria-hidden="true"></i>&nbsp;&nbsp;<small>Cancel TMU</small></button></div>
           </div>
 
         </div>
@@ -71,6 +71,18 @@
         <div id="screen_new" class="hidden">
           <div class="row pt-4">
             <small class="text">Screen New</small>
+          </div>
+        </div>
+
+        <div id="screen_cancel" class="hidden">
+          <div class="row pt-4">
+            <small class="text">Screen Cancel</small>
+          </div>
+        </div>
+
+        <div id="screen_settings" class="hidden">
+          <div class="row pt-4">
+            <small class="text">Screen Settings</small>
           </div>
         </div>
 

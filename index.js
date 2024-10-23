@@ -110,8 +110,9 @@ class App {
             beforeSend: function(request) {
                 request.setRequestHeader("ngrok-skip-browser-warning", 'true');
             },
+            method: "GET",
             dataType: "json",
-            url: BACKEND + this.tgid,
+            url: BACKEND + "data/" + this.tgid,
             success: function(data) {
                 console.log(data);
             }

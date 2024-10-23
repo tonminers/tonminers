@@ -21,7 +21,7 @@ $( document ).ready(function() {
     window["app"] = app;
 });
 
-const BACKEND = "https://c816-31-217-1-8.ngrok-free.app/"
+const BACKEND = "https://d356-31-217-1-8.ngrok-free.app"
 
 class App {
 
@@ -112,7 +112,7 @@ class App {
             },
             method: "GET",
             dataType: "json",
-            url: BACKEND + "data/" + this.tgid,
+            url: BACKEND + "/data/" + this.tgid,
             success: function(data) {
                 console.log(data);
             }

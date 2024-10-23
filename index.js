@@ -50,6 +50,7 @@ class App {
         } catch (e) {
             $("#first_name").html("Dev");
         }
+        this.loadData();
     }
 
     openScreen(screen) {
@@ -105,8 +106,15 @@ class App {
     }
 
     loadData() {
-        $.getJSON(BACKEND + "/" + this.tgid, function(data) {
-            console.log(data);
+        $.ajax({
+            beforeSend: function(request) {
+                request.setRequestHeader("ngrok-skip-browser-warning", 'true');
+            },
+            dataType: "json",
+            url: BACKEND + this.tgid,
+            success: function(data) {
+                console.log(data);
+            }
         });
     }
 

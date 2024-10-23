@@ -21,7 +21,7 @@ $( document ).ready(function() {
     window["app"] = app;
 });
 
-const BACKEND = "https://a780-31-217-1-8.ngrok-free.app"
+const BACKEND = "https://5paj7wyvhc.loclx.io"
 
 class App {
 

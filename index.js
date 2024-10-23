@@ -21,7 +21,7 @@ $( document ).ready(function() {
     window["app"] = app;
 });
 
-const BACKEND = "https://6d53a031195a58.lhr.life"
+const BACKEND = "http://localhost:4000"
 
 class App {
 
@@ -44,7 +44,6 @@ class App {
             userData.user = JSON.parse(userData.user);
 
             this.tgid = userData.user.id;
-            alert(this.tgid);
     
             $("#first_name").html(userData.user.first_name);
         } catch (e) {

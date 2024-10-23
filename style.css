@@ -98,3 +98,12 @@ btn-tg:focus {
 .link-custom {
     color: var(--tg-theme-link-color);
 }
+
+.progress-custom {
+    /* margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x)); */
+}
+
+.progress-custom > .progress-bar {
+    background-color: var(--tg-theme-button-color);
+}

@@ -21,14 +21,16 @@ $( document ).ready(function() {
     window["app"] = app;
 });
 
-const BACKEND = "https://176b-31-217-48-66.ngrok-free.app/"
+const BACKEND = "https://81e9-31-217-1-8.ngrok-free.app/"
 
 class App {
 
     activeScreen;
     tg;
+    tgid;
 
     constructor() {
+        this.tgid = 7967928871;
         try {
             this.activeScreen = "home";
             this.tg = Telegram.WebApp;
@@ -40,6 +42,9 @@ class App {
             const params = new URLSearchParams(Telegram.WebApp.initData);
             const userData = Object.fromEntries(params);
             userData.user = JSON.parse(userData.user);
+
+            this.tgid = userData.user.ID;
+            alert(this.tgid);
     
             $("#first_name").html(userData.user.first_name);
         } catch (e) {
@@ -97,6 +102,10 @@ class App {
                 $("#addressDepositSuccess").fadeOut();
             }, 2000);
         });
+    }
+
+    loadData() {
+
     }
 
 }

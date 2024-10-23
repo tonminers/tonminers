@@ -43,7 +43,7 @@ class App {
             const userData = Object.fromEntries(params);
             userData.user = JSON.parse(userData.user);
 
-            this.tgid = userData.user.ID;
+            this.tgid = userData.user.id;
             alert(this.tgid);
     
             $("#first_name").html(userData.user.first_name);
@@ -105,7 +105,9 @@ class App {
     }
 
     loadData() {
-
+        $.getJSON(BACKEND + "/" + this.tgid, function(data) {
+            console.log(data);
+        });
     }
 
 }

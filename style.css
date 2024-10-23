@@ -86,6 +86,6 @@ btn-tg:focus {
 }
 
 .section-icon {
-    color: var(--tg-theme-text-color);
+    color: var(--tg-theme-hint-color);
     font-size: 3em;
 }

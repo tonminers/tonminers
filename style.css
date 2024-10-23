@@ -92,4 +92,5 @@ btn-tg:focus {
 
 .custom-form {
     font-size: small;
+    background-color: var(--tg-theme-bg-color);
 }

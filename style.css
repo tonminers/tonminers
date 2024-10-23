@@ -5,6 +5,7 @@
     --tg-theme-hint-color: #708498;
     --tg-theme-button-color: #5288C1;
     --tg-theme-button-text-color: #FFF;
+    --tg-theme-link-color: #5288C1;
 }
 
 body {
@@ -92,4 +93,8 @@ btn-tg:focus {
 
 .custom-form {
     font-size: small;
+}
+
+.link-custom {
+    color: var(--tg-theme-link-color);
 }

@@ -66,4 +66,22 @@ class App {
         alert("dfdsafdsads");
     }
 
+    copyLink() {
+        var link = $("#refLink").html();
+        $("#copy").val(link);
+
+        var copyText = document.getElementById("copy");
+
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+
+        navigator.clipboard.writeText(copyText.value);
+
+        $("#refLinkSuccess").fadeIn(function() {
+        setTimeout(function() {
+            $("#refLinkSuccess").fadeOut();
+        }, 2000);
+        });
+    }
+
 }

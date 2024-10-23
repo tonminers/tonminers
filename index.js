@@ -21,7 +21,7 @@ $( document ).ready(function() {
     window["app"] = app;
 });
 
-const BACKEND = "https://5paj7wyvhc.loclx.io"
+const BACKEND = "https://6d53a031195a58.lhr.life"
 
 class App {
 
@@ -114,7 +114,10 @@ class App {
             dataType: "json",
             url: BACKEND + "/data/" + this.tgid,
             success: function(data) {
-                console.log(data);
+                $("#refLink").html("t.me/TonMinersRobot?start=" + data.code);
+                $("#earnings").html(data.earnings);
+                $("#tmu").html(data.tmu);
+                $("#addressDeposit").val(data.addr_deposit);
             }
         });
     }

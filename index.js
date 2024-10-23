@@ -78,9 +78,24 @@ class App {
         navigator.clipboard.writeText(copyText.value);
 
         $("#refLinkSuccess").fadeIn(function() {
-        setTimeout(function() {
-            $("#refLinkSuccess").fadeOut();
-        }, 2000);
+            setTimeout(function() {
+                $("#refLinkSuccess").fadeOut();
+            }, 2000);
+        });
+    }
+
+    copyAddress() {
+        var copyText = document.getElementById("addressDeposit");
+
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+
+        navigator.clipboard.writeText(copyText.value);
+
+        $("#addressDepositSuccess").fadeIn(function() {
+            setTimeout(function() {
+                $("#addressDepositSuccess").fadeOut();
+            }, 2000);
         });
     }
 

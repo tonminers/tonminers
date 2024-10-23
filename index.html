@@ -75,11 +75,12 @@
               <i class="fa-solid fa-circle-plus section-icon"></i>
             </div>
             <label for="addressWithdraw" class="form-label text"><small>Deposit Address</small></label>
-            <div class="input-group mb-3">
-              <input type="text" readonly class="form-control custom-form" placeholder="" aria-label="" aria-describedby="" value="UQALV7LJIwCc8VKgUoJa9CHChgUIi28GxFU4v_283rlgfIHG">
-              <button class="btn btn-tg" type="button"><i class="fa-solid fa-copy"></i></button>
+            <div class="input-group">
+              <input type="text" id="addressDeposit" readonly class="form-control custom-form" placeholder="" aria-label="" aria-describedby="" value="UQALV7LJIwCc8VKgUoJa9CHChgUIi28GxFU4v_283rlgfIHG">
+              <button class="btn btn-tg" type="button" onclick="app.copyAddress();"><i class="fa-solid fa-copy"></i></button>
             </div>
-            <div class="d-grid">
+            <span class="text-success mt-2" id="addressDepositSuccess" style="display: none; font-size: small;">Address successfully copied.</span>
+            <div class="d-grid mt-3">
               <button type="button" class="btn btn-tg"><small><i class="fa-solid fa-check-double"></i>&nbsp;&nbsp;Payment Confirmed</small></button>
             </div>
           </div>
@@ -112,7 +113,7 @@
     <input type="text" id="copy" style="display: none;">
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="./index.js?18"></script>
+    <script src="./index.js?19"></script>
 
   </body>
 </html>

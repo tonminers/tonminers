@@ -79,3 +79,8 @@ btn-tg:focus {
 .hidden {
     display: none;
 }
+
+.section {
+    background-color: var(--tg-theme-secondary-bg-color);
+    border-radius: 8px;   
+}

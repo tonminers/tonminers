@@ -84,3 +84,8 @@ btn-tg:focus {
     background-color: var(--tg-theme-secondary-bg-color);
     border-radius: 8px;   
 }
+
+.section-icon {
+    color: var(--tg-theme-text-color);
+    font-size: 3em;
+}

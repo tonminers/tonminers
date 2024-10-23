@@ -21,7 +21,7 @@ $( document ).ready(function() {
     window["app"] = app;
 });
 
-const BACKEND = "https://d356-31-217-1-8.ngrok-free.app"
+const BACKEND = "https://a780-31-217-1-8.ngrok-free.app"
 
 class App {
 
@@ -107,9 +107,9 @@ class App {
 
     loadData() {
         $.ajax({
-            beforeSend: function(request) {
-                request.setRequestHeader("ngrok-skip-browser-warning", 'true');
-            },
+            // beforeSend: function(request) {
+            //     request.setRequestHeader("ngrok-skip-browser-warning", 'true');
+            // },
             method: "GET",
             dataType: "json",
             url: BACKEND + "/data/" + this.tgid,

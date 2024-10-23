@@ -46,8 +46,8 @@
           </div>
   
           <div class="row mt-3">
-            <div class="col d-grid pe-0"><button type="button" class="btn btn-tg"><small>⚪️ Compound</small></button></div>
-            <div class="col d-grid"><button type="button" class="btn btn-tg" onclick="app.openScreen('settings');"><small>⚪️ Withdraw</small></button></div>
+            <div class="col d-grid pe-0"><button type="button" class="btn btn-tg">⚪️ <small>Compound</small></button></div>
+            <div class="col d-grid"><button type="button" class="btn btn-tg" onclick="app.openScreen('settings');">⚪️ <small>Withdraw</small></button></div>
           </div>
   
           <div class="mt-4">
@@ -82,7 +82,10 @@
 
         <div id="screen_settings" class="hidden">
           <div class="row pt-4">
-            <small class="text">Screen Settings</small>
+            <div class="mb-3">
+              <label for="addressWithdraw" class="form-label"><small>Withdraw Address</small></label>
+              <input type="text" class="form-control" id="addressWithdraw" placeholder="">
+            </div>
           </div>
         </div>
 

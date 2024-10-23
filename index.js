@@ -29,18 +29,22 @@ class App {
     tg;
 
     constructor() {
-        this.activeScreen = "home";
-        this.tg = Telegram.WebApp;
-        this.tg.SettingsButton.show();
-        this.tg.SettingsButton.onClick(function() {
-            app.openScreen("settings");
-        });
-
-        const params = new URLSearchParams(Telegram.WebApp.initData);
-        const userData = Object.fromEntries(params);
-        userData.user = JSON.parse(userData.user);
-
-        $("#first_name").html(userData.user.first_name);
+        try {
+            this.activeScreen = "home";
+            this.tg = Telegram.WebApp;
+            this.tg.SettingsButton.show();
+            this.tg.SettingsButton.onClick(function() {
+                app.openScreen("settings");
+            });
+    
+            const params = new URLSearchParams(Telegram.WebApp.initData);
+            const userData = Object.fromEntries(params);
+            userData.user = JSON.parse(userData.user);
+    
+            $("#first_name").html(userData.user.first_name);
+        } catch (e) {
+            $("#first_name").html("Dev");
+        }
     }
 
     openScreen(screen) {

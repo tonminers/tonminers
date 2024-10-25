@@ -21,7 +21,7 @@ $( document ).ready(function() {
     window["app"] = app;
 });
 
-const BACKEND = "http://localhost:4000"
+const BACKEND = "https://f37801ee762019.lhr.life"
 
 class App {
 
